@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.springcore.Employee" name="employeeObject">
+        <property name="id" value="50119"/>
+        <property name="accessForRooms">
+            <map>
+                <entry key="1" value="Abdul Kalam"/>
+                <entry key="2" value="Raja Ramanna"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean class="com.springcore.Person" name="personObject">
+        <property name="name" value="Eshan Shende"/>
+        <property name="mobileNumbers">
+            <list>
+                <value>8983663272</value>
+                <value>9307902112</value>
+                <value>null</value>
+            </list>
+        </property>
+        <property name="address" value="Pune"/>
+    </bean>
+
+    <bean class="com.springcore.Wheel" name="wheelObject">
+        <constructor-arg value="16"/>
+        <constructor-arg value="black"/>
+    </bean>
+
+    <bean class="com.springcore.Car" name="carObject">
+        <property name="wheel" ref="wheelObject"/>
+        <property name="color" value="blue"/>
+        <property name="engine" value="1.2"/>
+
+    </bean>
+</beans>

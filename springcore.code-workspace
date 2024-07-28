@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "spring-jdbc"
+		},
+		{
+			"path": "spring-orm"
+		},
+		{
+			"path": "springcore"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
